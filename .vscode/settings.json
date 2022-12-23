@@ -62,7 +62,9 @@
     "typeinfo": "cpp",
     "valarray": "cpp",
     "map": "cpp",
-    "random": "cpp"
+    "random": "cpp",
+    "queue": "cpp"
   },
-  "C_Cpp.errorSquiggles": "Enabled"
+  "C_Cpp.errorSquiggles": "Enabled",
+  "C_Cpp.default.enableConfigurationSquiggles": true
 }

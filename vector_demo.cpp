@@ -2,7 +2,8 @@
 #include <vector>
 using namespace std;
 
-int main() {
+int main()
+{
     vector<int> a;
     // a[0] = 2;  segmentation fault
     a.push_back(2);
@@ -13,23 +14,22 @@ int main() {
     vector<int> d(a.begin(), a.end()); // d = {2}
     d.push_back(5);
 
-
     // d = {2,5}, a = {2}, c = {'B','B','B','B','B'}, b = {6}
     // cout<<a.at(1); exception
 
     vector<int> v(10);
-    for(int i=0; i<10; i++)
-        v[i] = i+1;
+    for (int i = 0; i < 10; i++)
+        v[i] = i + 1;
     // v = {1,2,3,..,10}
     vector<int> v1(v);
     // v1 = {1,2,3,..,10}
 
     v.clear();
-    //cout << "v.size() = " << v.size()<<endl;
-    //cout << "v.capacity() = " << v.capacity()<<endl;
-    // cout << v[0] << endl; still outputs 1
-    // cout << v.at(0); exception
-    // cout << (v.empty()) <<endl;
+    // cout << "v.size() = " << v.size()<<endl;
+    // cout << "v.capacity() = " << v.capacity()<<endl;
+    //  cout << v[0] << endl; still outputs 1
+    //  cout << v.at(0); exception
+    //  cout << (v.empty()) <<endl;
 
     // iterators
     v = v1;
@@ -44,7 +44,7 @@ int main() {
     */
 
     // v = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
-    vector<int>::iterator  it = v.begin();
+    vector<int>::iterator it = v.begin();
     it += 3;
     cout << (*it) << endl;
 

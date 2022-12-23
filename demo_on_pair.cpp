@@ -90,7 +90,7 @@ int main()
      // sort in ascending order of second value of pairs
      sort(v2.begin(), v2.end(), sortbysec); // koi bhi comprator fn ho uska return type bool hoga
      displayVecPair(v2);                    // sort on based on the string
-                         // sort in ascending order of second value of pairs
+                                            // sort in ascending order of second value of pairs
      sort(v2.begin(), v2.end(), sortbysecDesc);
      displayVecPair(v2);
 
